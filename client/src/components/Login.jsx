@@ -2,12 +2,13 @@ import React, { useContext, useState } from 'react'
 import { Link, Navigate } from 'react-router-dom'
 import Register from './Register';
 import axios from 'axios';
+import Account from './Account';
 import { UserContext } from '../UserContext';
 const Login = () => {
   const [email,setEmail]=useState('');
   const [password,setPassword]=useState('');
-  const[redirect,setRedirect]=useState(false);
-  const{setUser}  =useContext(UserContext);
+  const [redirect,setRedirect]=useState(false);
+  const {setUser}  = useContext(UserContext);
   async function handleloginSubmit(ev){
     ev.preventDefault();
     try{
@@ -29,7 +30,7 @@ const Login = () => {
   } 
 
   return (
-    <div className='mt-4 grow flex items-center justify-around' >
+    <div className='mb-44 pb-44 mt-0 grow flex items-center justify-around' >
       <div className='mt-44' >
       <h1 className='text-4xl text-center pb-4 bold' >Login</h1>
         <form onSubmit={handleloginSubmit} className='max-w-md mx-auto ' >

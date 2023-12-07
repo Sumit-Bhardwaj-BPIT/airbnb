@@ -23,11 +23,12 @@ const Register = () => {
         }
     }
   return (
-    <div className='mt-4 grow flex items-center justify-around' >
+    <div className='mb-44 pb-44 grow flex items-center justify-around' >
       <div className='mt-44' >
       <h1 className='text-4xl text-center pb-4 bold' >Register</h1>
         <form onSubmit={registerUser} className='max-w-md mx-auto ' >
-            <input type="text" placeholder='John Doe'  className='max-w-md mx-auto ' value={name} onChange={ev=>setName(ev.target.value)} ></input>
+            <input type="text" placeholder='John Doe'  value={name} onChange={ev=>setName(ev.target.value)} ></input>
+
             <input type='email'placeholder='Type your email' value={email} onChange={ev=>setEmail(ev.target.value)} ></input>
             <input type='password' placeholder='Password' value={password} onChange={ev=>setPassword(ev.target.value)} ></input>
            

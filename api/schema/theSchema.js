@@ -22,3 +22,4 @@ const toSchema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Rg", toSchema);
+// module.exports=mongoose.model("Place",PlaceSchema);
